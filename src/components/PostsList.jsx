@@ -11,7 +11,12 @@ export default function PostsList({ onStopPosting, isPosting }) {
         <ul className={classes.posts}>
           {posts.length > 0 &&
             posts.map((post) => (
-              <Post author={post.author} body={post.body} key={post.id} />
+              <Post
+                author={post.author}
+                body={post.body}
+                id={post.id}
+                key={post.id}
+              />
             ))}
         </ul>
       )}
